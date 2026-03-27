@@ -12,8 +12,8 @@ st.set_page_config(page_title="Feedback Analysis - GATEWAYS 2025",
 
 DARK       = "#0f2d5e"
 CHART_FONT = dict(family="Inter", size=12, color=DARK)
-TITLE_FONT = dict(size=14, color=DARK)
-TICK_FONT  = dict(color=DARK, size=11)
+TITLE_FONT = dict(family="Inter", size=14, color=DARK, weight="bold")
+TICK_FONT  = dict(family="Inter", size=11, color=DARK)
 PLOT_BG    = "rgba(0,0,0,0)"
 PASTEL     = ["#bfdbfe","#a5f3fc","#bbf7d0","#fde68a","#e9d5ff","#fed7aa","#a7f3d0","#fca5a5"]
 
@@ -141,7 +141,9 @@ with c1:
     fig_rd.update_traces(textposition="outside", textfont=dict(size=12, color=DARK))
     fig_rd.update_layout(
         plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
-        font=CHART_FONT, margin=dict(l=5,r=5,t=10,b=5),
+        font=CHART_FONT,
+        title=dict(text="Rating Distribution", font=TITLE_FONT),
+        margin=dict(l=5,r=5,t=40,b=5),
         coloraxis_showscale=False,
         xaxis=dict(tickmode="linear", tick0=1, dtick=1,
                    gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
@@ -162,7 +164,9 @@ with c2:
                          textfont=dict(color=DARK))
     fig_re.update_layout(
         plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
-        font=CHART_FONT, margin=dict(l=5,r=30,t=10,b=5),
+        font=CHART_FONT,
+        title=dict(text="Avg. Rating per Event", font=TITLE_FONT),
+        margin=dict(l=5,r=30,t=40,b=5),
         coloraxis_showscale=False,
         xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
         yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
@@ -220,12 +224,15 @@ fig_heat = px.imshow(heat.round(2),
                      text_auto=".2f", aspect="auto",
                      title="Average Rating by State x Event")
 fig_heat.update_layout(
-    paper_bgcolor=PLOT_BG, font=CHART_FONT, title_font=TITLE_FONT,
+    paper_bgcolor=PLOT_BG, font=CHART_FONT,
+    title=dict(text="Average Rating by State x Event", font=TITLE_FONT),
     margin=dict(l=5,r=5,t=40,b=5),
-    coloraxis_colorbar=dict(title="Avg Rating",
-                            tickfont=TICK_FONT, titlefont=TICK_FONT),
-    xaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT),
-    yaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT),
+    coloraxis_colorbar=dict(
+        title=dict(text="Avg Rating", font=TICK_FONT),
+        tickfont=TICK_FONT
+    ),
+    xaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT, color=DARK),
+    yaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT, color=DARK),
     height=400,
 )
 st.plotly_chart(fig_heat, use_container_width=True)
