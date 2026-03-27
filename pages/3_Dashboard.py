@@ -20,7 +20,20 @@ st.markdown("""
 html,body,[class*="css"]{font-family:'Inter',sans-serif;}
 [data-testid="stAppViewContainer"]{background:linear-gradient(155deg,#e8f4ff 0%,#f0f8ff 50%,#eef1ff 100%);}
 [data-testid="stSidebar"]{background:linear-gradient(180deg,#dbeafe 0%,#e0e7ff 100%);border-right:1px solid #bfdbfe;}
-[data-testid="stSidebar"] *{color:#0f2d5e !important;}
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stPageLink span,
+[data-testid="stSidebar"] .stRadio label span,
+[data-testid="stSidebar"] .stCaption {color:#0f2d5e !important;}
+
+span[data-baseweb="tag"]{background-color:#3b82f6 !important;border:1px solid #2563eb !important;border-radius:4px !important;}
+span[data-baseweb="tag"] span{color:#fff !important;}
+span[data-baseweb="tag"] svg{fill:#fff !important;}
+
+div[data-baseweb="select"] > div{background-color:#fff !important;border-color:#bfdbfe !important;}
+div[data-baseweb="select"] input,
+div[data-baseweb="select"] span{color:#0f2d5e !important;}
+[data-baseweb="popover"] li{color:#0f2d5e !important;}
 .block-container{padding-top:1.2rem;}
 .page-header{
     background:linear-gradient(120deg,#0284c7 0%,#1d4ed8 60%,#4f46e5 100%);
