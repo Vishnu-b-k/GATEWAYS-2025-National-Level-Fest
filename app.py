@@ -14,8 +14,8 @@ DARK       = "#0f2d5e"
 MID        = "#1e4db7"
 ACCENT     = "#3b82f6"
 CHART_FONT = dict(family="Inter", size=12, color=DARK)
-TITLE_FONT = dict(size=14, color=DARK)
-TICK_FONT  = dict(color=DARK, size=11)
+TITLE_FONT = dict(family="Inter", size=14, color=DARK, weight="bold")
+TICK_FONT  = dict(family="Inter", size=11, color=DARK)
 PLOT_BG    = "rgba(0,0,0,0)"
 PASTEL     = ["#bfdbfe","#a5f3fc","#bbf7d0","#fde68a","#e9d5ff","#fed7aa","#a7f3d0","#fca5a5"]
 
@@ -132,7 +132,7 @@ cols = st.columns(4)
 for col, (label, value, sub, cls) in zip(cols, CARDS):
     col.markdown(f"""
     <div class="kpi-card">
-        <div class="kpi-label">{label}</div>
+        <div class="label kpi-label">{label}</div>
         <div class="{cls}">{value}</div>
         <div class="kpi-sub">{sub}</div>
     </div>""", unsafe_allow_html=True)
@@ -149,7 +149,7 @@ cols2 = st.columns(4)
 for col, (label, value, sub, cls) in zip(cols2, CARDS2):
     col.markdown(f"""
     <div class="kpi-card">
-        <div class="kpi-label">{label}</div>
+        <div class="label kpi-label">{label}</div>
         <div class="{cls}">{value}</div>
         <div class="kpi-sub">{sub}</div>
     </div>""", unsafe_allow_html=True)
@@ -166,10 +166,11 @@ with c1:
                  color="Event", color_discrete_sequence=PASTEL,
                  title="Participants per Event")
     fig.update_layout(showlegend=False, plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
-                      font=CHART_FONT, title_font=TITLE_FONT,
+                      font=CHART_FONT,
+                      title=dict(text="Participants per Event", font=TITLE_FONT),
                       margin=dict(l=5,r=5,t=40,b=5))
-    fig.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT)
-    fig.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT)
+    fig.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, titlefont=TICK_FONT)
+    fig.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
     st.plotly_chart(fig, use_container_width=True)
 
 with c2:
@@ -178,7 +179,8 @@ with c2:
     fig2 = px.pie(sv, values="Count", names="State",
                   color_discrete_sequence=PASTEL,
                   title="State-wise Participation", hole=0.42)
-    fig2.update_layout(paper_bgcolor=PLOT_BG, font=CHART_FONT, title_font=TITLE_FONT,
+    fig2.update_layout(paper_bgcolor=PLOT_BG, font=CHART_FONT,
+                       title=dict(text="State-wise Participation", font=TITLE_FONT),
                        margin=dict(l=5,r=5,t=40,b=5),
                        legend=dict(font=dict(color=DARK, size=11)))
     fig2.update_traces(textposition="inside", textinfo="percent+label",
