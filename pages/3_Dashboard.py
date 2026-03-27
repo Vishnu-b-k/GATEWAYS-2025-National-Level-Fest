@@ -143,15 +143,15 @@ with c1:
         title=dict(text="Bubble size = Participants - Color = Avg Rating", font=TITLE_FONT),
         margin=dict(l=5,r=5,t=40,b=5),
         xaxis=dict(gridcolor="#bfdbfe", tickangle=-30,
-                   tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
+                   tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
         coloraxis_colorbar=dict(
             title=dict(text="Avg Rating", font=TICK_FONT),
             tickfont=TICK_FONT
         ),
         height=400,
     )
-    st.plotly_chart(fig_bub, use_container_width=True)
+    st.plotly_chart(fig_bub, width="stretch")
 
 with c2:
     st.markdown('<div class="section-title">Top Colleges by Revenue</div>', unsafe_allow_html=True)
@@ -169,11 +169,11 @@ with c2:
         title=dict(text="Top Colleges by Revenue", font=TITLE_FONT),
         margin=dict(l=5,r=30,t=40,b=5),
         coloraxis_showscale=False,
-        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
+        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
         height=400,
     )
-    st.plotly_chart(fig_cr, use_container_width=True)
+    st.plotly_chart(fig_cr, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 
@@ -187,7 +187,7 @@ with c3:
                           font=CHART_FONT,
                           title=dict(text="Hierarchical Participation Breakdown", font=TITLE_FONT),
                           margin=dict(l=5,r=5,t=40,b=5), height=400)
-    st.plotly_chart(fig_sun, use_container_width=True)
+    st.plotly_chart(fig_sun, width="stretch")
 
 with c4:
     st.markdown('<div class="section-title">Rating Distribution per Event (Box Plot)</div>', unsafe_allow_html=True)
@@ -200,11 +200,11 @@ with c4:
         title=dict(text="Rating Spread per Event", font=TITLE_FONT),
         margin=dict(l=5,r=5,t=40,b=5),
         xaxis=dict(gridcolor="#bfdbfe", tickangle=-25,
-                   tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
+                   tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
         height=400,
     )
-    st.plotly_chart(fig_box, use_container_width=True)
+    st.plotly_chart(fig_box, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 
@@ -220,12 +220,12 @@ with c5:
         plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
         font=CHART_FONT, margin=dict(l=5,r=5,t=10,b=5),
         xaxis=dict(gridcolor="rgba(0,0,0,0)", tickangle=-30,
-                   tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
+                   tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
         legend=dict(font_size=11, bgcolor="rgba(0,0,0,0)",
                     font=dict(color=DARK)),
     )
-    st.plotly_chart(fig_gb, use_container_width=True)
+    st.plotly_chart(fig_gb, width="stretch")
 
 with c6:
     st.markdown('<div class="section-title">Key Insights</div>', unsafe_allow_html=True)
@@ -269,8 +269,8 @@ fig_sc.update_layout(
     font=CHART_FONT,
     title=dict(text="Does a higher fee lead to better rating?", font=TITLE_FONT),
     margin=dict(l=5,r=5,t=40,b=5),
-    xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
-    yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
+    xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+    yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
     legend=dict(font_size=11, bgcolor="rgba(0,0,0,0)", font=dict(color=DARK)),
 )
-st.plotly_chart(fig_sc, use_container_width=True)
+st.plotly_chart(fig_sc, width="stretch")

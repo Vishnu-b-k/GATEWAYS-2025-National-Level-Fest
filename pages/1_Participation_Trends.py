@@ -26,7 +26,7 @@ html,body,[class*="css"]{font-family:'Inter',sans-serif;}
 .page-header{
     background:linear-gradient(120deg,#1d4ed8 0%,#06b6d4 100%);
     border-radius:18px; padding:1.5rem 2rem; color:white;
-    margin-bottom:1.4rem; box-shadow:0 6px 24px rgba(29,78,216,.2);
+    margin-bottom:1.4rem; box-shadow:0 6px 24px rgba(29,78,216,.22);
 }
 .page-header h2{font-size:1.8rem;font-weight:800;margin:0;letter-spacing:-.02em;}
 .page-header p{font-size:.9rem;opacity:.92;margin:.3rem 0 0 0;}
@@ -104,7 +104,7 @@ fig_map.update_layout(
     ),
     height=480,
 )
-st.plotly_chart(fig_map, use_container_width=True)
+st.plotly_chart(fig_map, width="stretch")
 
 st.markdown('<div class="section-title">State-wise Participant Count</div>', unsafe_allow_html=True)
 sc = state_counts.sort_values("Participants", ascending=False)
@@ -116,9 +116,9 @@ fig_st.update_layout(showlegend=False, plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_
                      font=CHART_FONT,
                      title=dict(text="Participants per State", font=TITLE_FONT),
                      margin=dict(l=5,r=5,t=40,b=5))
-fig_st.update_xaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
-fig_st.update_yaxes(gridcolor="#bfdbfe",       tickfont=TICK_FONT, titlefont=TICK_FONT)
-st.plotly_chart(fig_st, use_container_width=True)
+fig_st.update_xaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+fig_st.update_yaxes(gridcolor="#bfdbfe",       tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+st.plotly_chart(fig_st, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 
@@ -132,9 +132,9 @@ with c1:
     fig_ev.update_traces(textposition="outside", textfont=dict(color=DARK))
     fig_ev.update_layout(showlegend=False, plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
                          font=CHART_FONT, margin=dict(l=5,r=20,t=10,b=5))
-    fig_ev.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    fig_ev.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    st.plotly_chart(fig_ev, use_container_width=True)
+    fig_ev.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    fig_ev.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    st.plotly_chart(fig_ev, width="stretch")
 
 with c2:
     st.markdown('<div class="section-title">College-wise Participation (Top 12)</div>', unsafe_allow_html=True)
@@ -146,9 +146,9 @@ with c2:
     fig_cv.update_layout(showlegend=False, plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
                          font=CHART_FONT, margin=dict(l=5,r=20,t=10,b=5),
                          coloraxis_showscale=False)
-    fig_cv.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    fig_cv.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    st.plotly_chart(fig_cv, use_container_width=True)
+    fig_cv.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    fig_cv.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    st.plotly_chart(fig_cv, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 
@@ -165,7 +165,7 @@ with c3:
     fig_et.update_layout(paper_bgcolor=PLOT_BG, font=CHART_FONT,
                          margin=dict(l=5,r=5,t=10,b=5),
                          legend=dict(font=dict(color=DARK, size=11)))
-    st.plotly_chart(fig_et, use_container_width=True)
+    st.plotly_chart(fig_et, width="stretch")
 
 with c4:
     st.markdown('<div class="section-title">Revenue by Event</div>', unsafe_allow_html=True)
@@ -180,9 +180,9 @@ with c4:
     fig_rv.update_layout(showlegend=False, plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
                          font=CHART_FONT, margin=dict(l=5,r=20,t=10,b=5),
                          coloraxis_showscale=False)
-    fig_rv.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    fig_rv.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    st.plotly_chart(fig_rv, use_container_width=True)
+    fig_rv.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    fig_rv.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    st.plotly_chart(fig_rv, width="stretch")
 
 st.markdown('<div class="section-title">College x Event Treemap</div>', unsafe_allow_html=True)
 tm = dff.groupby(["College","Event Name"]).size().reset_index(name="Count")
@@ -193,4 +193,4 @@ fig_tm = px.treemap(tm, path=["College","Event Name"], values="Count",
 fig_tm.update_layout(paper_bgcolor=PLOT_BG, font=CHART_FONT,
                      title=dict(text="College Distribution across Events", font=TITLE_FONT),
                      margin=dict(l=5,r=5,t=40,b=5), coloraxis_showscale=False)
-st.plotly_chart(fig_tm, use_container_width=True)
+st.plotly_chart(fig_tm, width="stretch")

@@ -169,9 +169,9 @@ with c1:
                       font=CHART_FONT,
                       title=dict(text="Participants per Event", font=TITLE_FONT),
                       margin=dict(l=5,r=5,t=40,b=5))
-    fig.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    fig.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, titlefont=TICK_FONT)
-    st.plotly_chart(fig, use_container_width=True)
+    fig.update_xaxes(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    fig.update_yaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT))
+    st.plotly_chart(fig, width="stretch")
 
 with c2:
     sv = df["State"].value_counts().reset_index()
@@ -186,7 +186,7 @@ with c2:
     fig2.update_traces(textposition="inside", textinfo="percent+label",
                        textfont=dict(color=DARK, size=11),
                        marker=dict(line=dict(color="#fff", width=2)))
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width="stretch")
 
 st.markdown("---")
 st.caption("Use the sidebar to navigate to detailed analysis pages.")

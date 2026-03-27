@@ -1,0 +1,2628 @@
+
+[     UTC     ] Logs for gateways-2025-national-level-festgit-cj6srfquk2tk9pjhuuucxt.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[05:12:12] 🖥 Provisioning machine...
+[05:12:12] 🎛 Preparing system...
+[05:12:12] ⛓ Spinning up manager process...
+[05:12:11] 🚀 Starting up repository: 'gateways-2025-national-level-fest', branch: 'main', main module: 'app.py'
+[05:12:11] 🐙 Cloning repository...
+[05:12:12] 🐙 Cloning into '/mount/src/gateways-2025-national-level-fest'...
+
+[05:12:12] 🐙 Cloned repository!
+[05:12:12] 🐙 Pulling code changes from Github...
+[05:12:12] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Resolved 45 packages in 597ms
+Prepared 45 packages in 2.49s
+Installed 45 packages in 209ms
+ + altair==6.0.0
+ + attrs==26.1.0
+ + blinker==1.9.0
+ + cachetools==7.0.5
+ + certifi==2026.2.25
+ + charset-normalizer==3.4.6
+ + click==8.3.1
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + fonttools==[2026-03-27 05:12:16.029726] 4.62.1
+ + gitdb==4.0.12
+ + gitpython==3.1.46
+ + idna==3.11
+ + jinja2==3.1.6
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + kiwisolver==1.5.0
+ [2026-03-27 05:12:16.029873] + markupsafe==3.0.3
+ + matplotlib==3.10.8
+ + narwhals==2.18.1
+ + numpy==2.4.3
+ + packaging==26.0
+ + pandas==2.3.3
+ + pillow==12.1.1
+ + plotly==6.6.0
+ + protobuf==6.33.6
+ + pyarrow==23.0.1
+ + pydeck==0.9.1[2026-03-27 05:12:16.030766] 
+ + pyparsing==3.3.2
+ + python-dateutil==2.9.0.post0
+ + pytz==2026.1.post1
+ + referencing==0.37.0
+ + requests[2026-03-27 05:12:16.031086] ==2.33.0
+ + rpds-py==0.30.0
+ + six==1.17.0
+ + smmap==5.0.3
+ + streamlit==1.55.0
+ + tenacity==9.1.4
+ + toml==0.10.2
+ + tornado==6.5.5
+ + typing-extensions[2026-03-27 05:12:16.031904] ==4.15.0
+ + tzdata==2025.3
+ + urllib3==2.6.3[2026-03-27 05:12:16.032104] 
+ + watchdog==6.0.0
+ + wordcloud==1.9.6[2026-03-27 05:12:16.032290] 
+Checking if Streamlit is installed
+Found Streamlit version 1.55.0 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Resolved 4 packages in 129ms
+Prepared 4 packages in 125ms
+Installed 4 packages in 17ms
+ + markdown-it-py==4.0.0
+ + mdurl==0.1.2[2026-03-27 05:12:18.345801] 
+ + pygments==2.19.2
+ + rich==14.3.3
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[05:12:18] 🐍 Python dependencies were installed from /mount/src/gateways-2025-national-level-fest/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[05:12:19] 📦 Processed dependencies!
+
+
+
+2026-03-27 05:12:46.311 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:12:46.367 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:17:12.368 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:17:12.416 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/1_Participation_Trends.py  
+  :96 in <module>                                                               
+                                                                                
+     93 │   hover_data={"Participants": True},                                  
+     94 )                                                                       
+     95 fig_map.update_geos(fitbounds="locations", visible=False, bgcolor=PLOT  
+  ❱  96 fig_map.update_layout(                                                  
+     97 │   paper_bgcolor=PLOT_BG, plot_bgcolor=PLOT_BG,                        
+     98 │   font=CHART_FONT, title_font=dict(size=15, color=DARK),              
+     99 │   margin=dict(l=0,r=0,t=40,b=0),                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:218 in update_layout                                                       
+                                                                                
+      215 │   │   │   The Figure object that the update_layout method was call  
+      216 │   │                                                                 
+      217 │   │   """                                                           
+  ❱   218 │   │   return super().update_layout(dict1, overwrite, **kwargs)      
+      219 │                                                                     
+      220 │   def for_each_trace(                                               
+      221 │   │   self, fn, selector=None, row=None, col=None, secondary_y=Non  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:14  
+  15 in update_layout                                                           
+                                                                                
+    1412 │   │   BaseFigure                                                     
+    1413 │   │   │   The Figure object that the update_layout method was calle  
+    1414 │   │   """                                                            
+  ❱ 1415 │   │   self.layout.update(dict1, overwrite=overwrite, **kwargs)       
+    1416 │   │   return self                                                    
+    1417 │                                                                      
+    1418 │   def _select_layout_subplots_by_prefix(                             
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  71 in _perform_update                                                         
+                                                                                
+    3968 │   │   │   │   if isinstance(validator, CompoundValidator) and isins  
+    3969 │   │   │   │   │   # Update compound objects recursively              
+    3970 │   │   │   │   │   # plotly_obj[key].update(val)                      
+  ❱ 3971 │   │   │   │   │   BaseFigure._perform_update(plotly_obj[key], val)   
+    3972 │   │   │   │   elif isinstance(validator, CompoundArrayValidator):    
+    3973 │   │   │   │   │   if plotly_obj[key]:                                
+    3974 │   │   │   │   │   │   # plotly_obj has an existing non-empty array   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.coloraxis.ColorBar: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        bgcolor
+            Sets the color of padded area.
+        bordercolor
+            Sets the axis line color.
+        borderwidth
+            Sets the width (in px) or the border enclosing this
+            color bar.
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        len
+            Sets the length of the color bar This measure excludes
+            the padding of both ends. That is, the color bar length
+            is this length minus the padding on both ends.
+        lenmode
+            Determines whether this color bar's length (i.e. the
+            measure in the color variation direction) is set in
+            units of plot "fraction" or in *pixels. Use `len` to
+            set the value.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        orientation
+            Sets the orientation of the colorbar.
+        outlinecolor
+            Sets the axis line color.
+        outlinewidth
+            Sets the width (in px) of the axis line.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        thickness
+            Sets the thickness of the color bar This measure
+            excludes the size of the padding, ticks and labels.
+        thicknessmode
+            Determines whether this color bar's thickness (i.e. the
+            measure in the constant color direction) is set in
+            units of plot "fraction" or in "pixels". Use
+            `thickness` to set the value.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the color bar's tick label font
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.coloraxi
+            s.colorbar.Tickformatstop` instances or dicts with
+            compatible properties
+        tickformatstopdefaults
+            When used in a template (as layout.template.layout.colo
+            raxis.colorbar.tickformatstopdefaults), sets the
+            default property values to use for elements of
+            layout.coloraxis.colorbar.tickformatstops
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. In other cases the default is *hide past
+            div*.
+        ticklabelposition
+            Determines where tick labels are drawn relative to the
+            ticks. Left and right options are used when
+            `orientation` is "h", top and bottom when `orientation`
+            is "v".
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided).
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.coloraxis.colorbar.
+            Title` instance or dict with compatible properties
+        x
+            Sets the x position with respect to `xref` of the color
+            bar (in plot fraction). When `xref` is "paper",
+            defaults to 1.02 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". When `xref` is "container",
+            defaults to 1 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". Must be between 0 and 1 if `xref`
+            is "container" and between "-2" and 3 if `xref` is
+            "paper".
+        xanchor
+            Sets this color bar's horizontal position anchor. This
+            anchor binds the `x` position to the "left", "center"
+            or "right" of the color bar. Defaults to "left" when
+            `orientation` is "v" and "center" when `orientation` is
+            "h".
+        xpad
+            Sets the amount of padding (in px) along the x
+            direction.
+        xref
+            Sets the container `x` refers to. "container" spans the
+            entire `width` of the plot. "paper" refers to the width
+            of the plotting area only.
+        y
+            Sets the y position with respect to `yref` of the color
+            bar (in plot fraction). When `yref` is "paper",
+            defaults to 0.5 when `orientation` is "v" and 1.02 when
+            `orientation` is "h". When `yref` is "container",
+            defaults to 0.5 when `orientation` is "v" and 1 when
+            `orientation` is "h". Must be between 0 and 1 if `yref`
+            is "container" and between "-2" and 3 if `yref` is
+            "paper".
+        yanchor
+            Sets this color bar's vertical position anchor This
+            anchor binds the `y` position to the "top", "middle" or
+            "bottom" of the color bar. Defaults to "middle" when
+            `orientation` is "v" and "bottom" when `orientation` is
+            "h".
+        ypad
+            Sets the amount of padding (in px) along the y
+            direction.
+        yref
+            Sets the container `y` refers to. "container" spans the
+            entire `height` of the plot. "paper" refers to the
+            height of the plotting area only.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+2026-03-27 05:19:40.885 The `use_column_width` parameter has been deprecated and will be removed in a future release. Please utilize the `width` parameter instead.
+2026-03-27 05:19:40.930 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:19:40.972 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:19:41.015 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/2_Feedback_Analysis.py:22  
+  2 in <module>                                                                 
+                                                                                
+    219 │   │   │   │   │    color_continuous_scale=["#dbeafe","#93c5fd","#1d4  
+    220 │   │   │   │   │    text_auto=".2f", aspect="auto",                    
+    221 │   │   │   │   │    title="Average Rating by State x Event")           
+  ❱ 222 fig_heat.update_layout(                                                 
+    223 │   paper_bgcolor=PLOT_BG, font=CHART_FONT, title_font=TITLE_FONT,      
+    224 │   margin=dict(l=5,r=5,t=40,b=5),                                      
+    225 │   coloraxis_colorbar=dict(title="Avg Rating",                         
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:218 in update_layout                                                       
+                                                                                
+      215 │   │   │   The Figure object that the update_layout method was call  
+      216 │   │                                                                 
+      217 │   │   """                                                           
+  ❱   218 │   │   return super().update_layout(dict1, overwrite, **kwargs)      
+      219 │                                                                     
+      220 │   def for_each_trace(                                               
+      221 │   │   self, fn, selector=None, row=None, col=None, secondary_y=Non  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:14  
+  15 in update_layout                                                           
+                                                                                
+    1412 │   │   BaseFigure                                                     
+    1413 │   │   │   The Figure object that the update_layout method was calle  
+    1414 │   │   """                                                            
+  ❱ 1415 │   │   self.layout.update(dict1, overwrite=overwrite, **kwargs)       
+    1416 │   │   return self                                                    
+    1417 │                                                                      
+    1418 │   def _select_layout_subplots_by_prefix(                             
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  71 in _perform_update                                                         
+                                                                                
+    3968 │   │   │   │   if isinstance(validator, CompoundValidator) and isins  
+    3969 │   │   │   │   │   # Update compound objects recursively              
+    3970 │   │   │   │   │   # plotly_obj[key].update(val)                      
+  ❱ 3971 │   │   │   │   │   BaseFigure._perform_update(plotly_obj[key], val)   
+    3972 │   │   │   │   elif isinstance(validator, CompoundArrayValidator):    
+    3973 │   │   │   │   │   if plotly_obj[key]:                                
+    3974 │   │   │   │   │   │   # plotly_obj has an existing non-empty array   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.coloraxis.ColorBar: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        bgcolor
+            Sets the color of padded area.
+        bordercolor
+            Sets the axis line color.
+        borderwidth
+            Sets the width (in px) or the border enclosing this
+            color bar.
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        len
+            Sets the length of the color bar This measure excludes
+            the padding of both ends. That is, the color bar length
+            is this length minus the padding on both ends.
+        lenmode
+            Determines whether this color bar's length (i.e. the
+            measure in the color variation direction) is set in
+            units of plot "fraction" or in *pixels. Use `len` to
+            set the value.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        orientation
+            Sets the orientation of the colorbar.
+        outlinecolor
+            Sets the axis line color.
+        outlinewidth
+            Sets the width (in px) of the axis line.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        thickness
+            Sets the thickness of the color bar This measure
+            excludes the size of the padding, ticks and labels.
+        thicknessmode
+            Determines whether this color bar's thickness (i.e. the
+            measure in the constant color direction) is set in
+            units of plot "fraction" or in "pixels". Use
+            `thickness` to set the value.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the color bar's tick label font
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.coloraxi
+            s.colorbar.Tickformatstop` instances or dicts with
+            compatible properties
+        tickformatstopdefaults
+            When used in a template (as layout.template.layout.colo
+            raxis.colorbar.tickformatstopdefaults), sets the
+            default property values to use for elements of
+            layout.coloraxis.colorbar.tickformatstops
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. In other cases the default is *hide past
+            div*.
+        ticklabelposition
+            Determines where tick labels are drawn relative to the
+            ticks. Left and right options are used when
+            `orientation` is "h", top and bottom when `orientation`
+            is "v".
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided).
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.coloraxis.colorbar.
+            Title` instance or dict with compatible properties
+        x
+            Sets the x position with respect to `xref` of the color
+            bar (in plot fraction). When `xref` is "paper",
+            defaults to 1.02 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". When `xref` is "container",
+            defaults to 1 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". Must be between 0 and 1 if `xref`
+            is "container" and between "-2" and 3 if `xref` is
+            "paper".
+        xanchor
+            Sets this color bar's horizontal position anchor. This
+            anchor binds the `x` position to the "left", "center"
+            or "right" of the color bar. Defaults to "left" when
+            `orientation` is "v" and "center" when `orientation` is
+            "h".
+        xpad
+            Sets the amount of padding (in px) along the x
+            direction.
+        xref
+            Sets the container `x` refers to. "container" spans the
+            entire `width` of the plot. "paper" refers to the width
+            of the plotting area only.
+        y
+            Sets the y position with respect to `yref` of the color
+            bar (in plot fraction). When `yref` is "paper",
+            defaults to 0.5 when `orientation` is "v" and 1.02 when
+            `orientation` is "h". When `yref` is "container",
+            defaults to 0.5 when `orientation` is "v" and 1 when
+            `orientation` is "h". Must be between 0 and 1 if `yref`
+            is "container" and between "-2" and 3 if `yref` is
+            "paper".
+        yanchor
+            Sets this color bar's vertical position anchor This
+            anchor binds the `y` position to the "top", "middle" or
+            "bottom" of the color bar. Defaults to "middle" when
+            `orientation` is "v" and "bottom" when `orientation` is
+            "h".
+        ypad
+            Sets the amount of padding (in px) along the y
+            direction.
+        yref
+            Sets the container `y` refers to. "container" spans the
+            entire `height` of the plot. "paper" refers to the
+            height of the plotting area only.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/1_Participation_Trends.py  
+  :96 in <module>                                                               
+                                                                                
+     93 │   hover_data={"Participants": True},                                  
+     94 )                                                                       
+     95 fig_map.update_geos(fitbounds="locations", visible=False, bgcolor=PLOT  
+  ❱  96 fig_map.update_layout(                                                  
+     97 │   paper_bgcolor=PLOT_BG, plot_bgcolor=PLOT_BG,                        
+     98 │   font=CHART_FONT, title_font=dict(size=15, color=DARK),              
+     99 │   margin=dict(l=0,r=0,t=40,b=0),                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:218 in update_layout                                                       
+                                                                                
+      215 │   │   │   The Figure object that the update_layout method was call  
+      216 │   │                                                                 
+      217 │   │   """                                                           
+  ❱   218 │   │   return super().update_layout(dict1, overwrite, **kwargs)      
+      219 │                                                                     
+      220 │   def for_each_trace(                                               
+      221 │   │   self, fn, selector=None, row=None, col=None, secondary_y=Non  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:14  
+  15 in update_layout                                                           
+                                                                                
+    1412 │   │   BaseFigure                                                     
+    1413 │   │   │   The Figure object that the update_layout method was calle  
+    1414 │   │   """                                                            
+  ❱ 1415 │   │   self.layout.update(dict1, overwrite=overwrite, **kwargs)       
+    1416 │   │   return self                                                    
+    1417 │                                                                      
+    1418 │   def _select_layout_subplots_by_prefix(                             
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  71 in _perform_update                                                         
+                                                                                
+    3968 │   │   │   │   if isinstance(validator, CompoundValidator) and isins  
+    3969 │   │   │   │   │   # Update compound objects recursively              
+    3970 │   │   │   │   │   # plotly_obj[key].update(val)                      
+  ❱ 3971 │   │   │   │   │   BaseFigure._perform_update(plotly_obj[key], val)   
+    3972 │   │   │   │   elif isinstance(validator, CompoundArrayValidator):    
+    3973 │   │   │   │   │   if plotly_obj[key]:                                
+    3974 │   │   │   │   │   │   # plotly_obj has an existing non-empty array   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.coloraxis.ColorBar: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        bgcolor
+            Sets the color of padded area.
+        bordercolor
+            Sets the axis line color.
+        borderwidth
+            Sets the width (in px) or the border enclosing this
+            color bar.
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        len
+            Sets the length of the color bar This measure excludes
+            the padding of both ends. That is, the color bar length
+            is this length minus the padding on both ends.
+        lenmode
+            Determines whether this color bar's length (i.e. the
+            measure in the color variation direction) is set in
+            units of plot "fraction" or in *pixels. Use `len` to
+            set the value.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        orientation
+            Sets the orientation of the colorbar.
+        outlinecolor
+            Sets the axis line color.
+        outlinewidth
+            Sets the width (in px) of the axis line.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        thickness
+            Sets the thickness of the color bar This measure
+            excludes the size of the padding, ticks and labels.
+        thicknessmode
+            Determines whether this color bar's thickness (i.e. the
+            measure in the constant color direction) is set in
+            units of plot "fraction" or in "pixels". Use
+            `thickness` to set the value.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the color bar's tick label font
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.coloraxi
+            s.colorbar.Tickformatstop` instances or dicts with
+            compatible properties
+        tickformatstopdefaults
+            When used in a template (as layout.template.layout.colo
+            raxis.colorbar.tickformatstopdefaults), sets the
+            default property values to use for elements of
+            layout.coloraxis.colorbar.tickformatstops
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. In other cases the default is *hide past
+            div*.
+        ticklabelposition
+            Determines where tick labels are drawn relative to the
+            ticks. Left and right options are used when
+            `orientation` is "h", top and bottom when `orientation`
+            is "v".
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided).
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.coloraxis.colorbar.
+            Title` instance or dict with compatible properties
+        x
+            Sets the x position with respect to `xref` of the color
+            bar (in plot fraction). When `xref` is "paper",
+            defaults to 1.02 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". When `xref` is "container",
+            defaults to 1 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". Must be between 0 and 1 if `xref`
+            is "container" and between "-2" and 3 if `xref` is
+            "paper".
+        xanchor
+            Sets this color bar's horizontal position anchor. This
+            anchor binds the `x` position to the "left", "center"
+            or "right" of the color bar. Defaults to "left" when
+            `orientation` is "v" and "center" when `orientation` is
+            "h".
+        xpad
+            Sets the amount of padding (in px) along the x
+            direction.
+        xref
+            Sets the container `x` refers to. "container" spans the
+            entire `width` of the plot. "paper" refers to the width
+            of the plotting area only.
+        y
+            Sets the y position with respect to `yref` of the color
+            bar (in plot fraction). When `yref` is "paper",
+            defaults to 0.5 when `orientation` is "v" and 1.02 when
+            `orientation` is "h". When `yref` is "container",
+            defaults to 0.5 when `orientation` is "v" and 1 when
+            `orientation` is "h". Must be between 0 and 1 if `yref`
+            is "container" and between "-2" and 3 if `yref` is
+            "paper".
+        yanchor
+            Sets this color bar's vertical position anchor This
+            anchor binds the `y` position to the "top", "middle" or
+            "bottom" of the color bar. Defaults to "middle" when
+            `orientation` is "v" and "bottom" when `orientation` is
+            "h".
+        ypad
+            Sets the amount of padding (in px) along the y
+            direction.
+        yref
+            Sets the container `y` refers to. "container" spans the
+            entire `height` of the plot. "paper" refers to the
+            height of the plotting area only.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+2026-03-27 05:19:47.226 The `use_column_width` parameter has been deprecated and will be removed in a future release. Please utilize the `width` parameter instead.
+2026-03-27 05:19:47.273 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:19:47.328 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:19:47.384 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/2_Feedback_Analysis.py:22  
+  2 in <module>                                                                 
+                                                                                
+    219 │   │   │   │   │    color_continuous_scale=["#dbeafe","#93c5fd","#1d4  
+    220 │   │   │   │   │    text_auto=".2f", aspect="auto",                    
+    221 │   │   │   │   │    title="Average Rating by State x Event")           
+  ❱ 222 fig_heat.update_layout(                                                 
+    223 │   paper_bgcolor=PLOT_BG, font=CHART_FONT, title_font=TITLE_FONT,      
+    224 │   margin=dict(l=5,r=5,t=40,b=5),                                      
+    225 │   coloraxis_colorbar=dict(title="Avg Rating",                         
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:218 in update_layout                                                       
+                                                                                
+      215 │   │   │   The Figure object that the update_layout method was call  
+      216 │   │                                                                 
+      217 │   │   """                                                           
+  ❱   218 │   │   return super().update_layout(dict1, overwrite, **kwargs)      
+      219 │                                                                     
+      220 │   def for_each_trace(                                               
+      221 │   │   self, fn, selector=None, row=None, col=None, secondary_y=Non  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:14  
+  15 in update_layout                                                           
+                                                                                
+    1412 │   │   BaseFigure                                                     
+    1413 │   │   │   The Figure object that the update_layout method was calle  
+    1414 │   │   """                                                            
+  ❱ 1415 │   │   self.layout.update(dict1, overwrite=overwrite, **kwargs)       
+    1416 │   │   return self                                                    
+    1417 │                                                                      
+    1418 │   def _select_layout_subplots_by_prefix(                             
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  71 in _perform_update                                                         
+                                                                                
+    3968 │   │   │   │   if isinstance(validator, CompoundValidator) and isins  
+    3969 │   │   │   │   │   # Update compound objects recursively              
+    3970 │   │   │   │   │   # plotly_obj[key].update(val)                      
+  ❱ 3971 │   │   │   │   │   BaseFigure._perform_update(plotly_obj[key], val)   
+    3972 │   │   │   │   elif isinstance(validator, CompoundArrayValidator):    
+    3973 │   │   │   │   │   if plotly_obj[key]:                                
+    3974 │   │   │   │   │   │   # plotly_obj has an existing non-empty array   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.coloraxis.ColorBar: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        bgcolor
+            Sets the color of padded area.
+        bordercolor
+            Sets the axis line color.
+        borderwidth
+            Sets the width (in px) or the border enclosing this
+            color bar.
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        len
+            Sets the length of the color bar This measure excludes
+            the padding of both ends. That is, the color bar length
+            is this length minus the padding on both ends.
+        lenmode
+            Determines whether this color bar's length (i.e. the
+            measure in the color variation direction) is set in
+            units of plot "fraction" or in *pixels. Use `len` to
+            set the value.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        orientation
+            Sets the orientation of the colorbar.
+        outlinecolor
+            Sets the axis line color.
+        outlinewidth
+            Sets the width (in px) of the axis line.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        thickness
+            Sets the thickness of the color bar This measure
+            excludes the size of the padding, ticks and labels.
+        thicknessmode
+            Determines whether this color bar's thickness (i.e. the
+            measure in the constant color direction) is set in
+            units of plot "fraction" or in "pixels". Use
+            `thickness` to set the value.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the color bar's tick label font
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.coloraxi
+            s.colorbar.Tickformatstop` instances or dicts with
+            compatible properties
+        tickformatstopdefaults
+            When used in a template (as layout.template.layout.colo
+            raxis.colorbar.tickformatstopdefaults), sets the
+            default property values to use for elements of
+            layout.coloraxis.colorbar.tickformatstops
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. In other cases the default is *hide past
+            div*.
+        ticklabelposition
+            Determines where tick labels are drawn relative to the
+            ticks. Left and right options are used when
+            `orientation` is "h", top and bottom when `orientation`
+            is "v".
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided).
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.coloraxis.colorbar.
+            Title` instance or dict with compatible properties
+        x
+            Sets the x position with respect to `xref` of the color
+            bar (in plot fraction). When `xref` is "paper",
+            defaults to 1.02 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". When `xref` is "container",
+            defaults to 1 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". Must be between 0 and 1 if `xref`
+            is "container" and between "-2" and 3 if `xref` is
+            "paper".
+        xanchor
+            Sets this color bar's horizontal position anchor. This
+            anchor binds the `x` position to the "left", "center"
+            or "right" of the color bar. Defaults to "left" when
+            `orientation` is "v" and "center" when `orientation` is
+            "h".
+        xpad
+            Sets the amount of padding (in px) along the x
+            direction.
+        xref
+            Sets the container `x` refers to. "container" spans the
+            entire `width` of the plot. "paper" refers to the width
+            of the plotting area only.
+        y
+            Sets the y position with respect to `yref` of the color
+            bar (in plot fraction). When `yref` is "paper",
+            defaults to 0.5 when `orientation` is "v" and 1.02 when
+            `orientation` is "h". When `yref` is "container",
+            defaults to 0.5 when `orientation` is "v" and 1 when
+            `orientation` is "h". Must be between 0 and 1 if `yref`
+            is "container" and between "-2" and 3 if `yref` is
+            "paper".
+        yanchor
+            Sets this color bar's vertical position anchor This
+            anchor binds the `y` position to the "top", "middle" or
+            "bottom" of the color bar. Defaults to "middle" when
+            `orientation` is "v" and "bottom" when `orientation` is
+            "h".
+        ypad
+            Sets the amount of padding (in px) along the y
+            direction.
+        yref
+            Sets the container `y` refers to. "container" spans the
+            entire `height` of the plot. "paper" refers to the
+            height of the plotting area only.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/3_Dashboard.py:140 in      
+  <module>                                                                      
+                                                                                
+    137 │   │   │   │   │   │    hover_data={"Count":True,"Avg_Rating":":.2f"}  
+    138 │   │   │   │   │   │    size_max=45,                                   
+    139 │   │   │   │   │   │    title="Bubble size = Participants - Color = A  
+  ❱ 140 │   fig_bub.update_layout(                                              
+    141 │   │   plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,                    
+    142 │   │   font=CHART_FONT, title_font=TITLE_FONT,                         
+    143 │   │   margin=dict(l=5,r=5,t=40,b=5),                                  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:218 in update_layout                                                       
+                                                                                
+      215 │   │   │   The Figure object that the update_layout method was call  
+      216 │   │                                                                 
+      217 │   │   """                                                           
+  ❱   218 │   │   return super().update_layout(dict1, overwrite, **kwargs)      
+      219 │                                                                     
+      220 │   def for_each_trace(                                               
+      221 │   │   self, fn, selector=None, row=None, col=None, secondary_y=Non  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:14  
+  15 in update_layout                                                           
+                                                                                
+    1412 │   │   BaseFigure                                                     
+    1413 │   │   │   The Figure object that the update_layout method was calle  
+    1414 │   │   """                                                            
+  ❱ 1415 │   │   self.layout.update(dict1, overwrite=overwrite, **kwargs)       
+    1416 │   │   return self                                                    
+    1417 │                                                                      
+    1418 │   def _select_layout_subplots_by_prefix(                             
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  71 in _perform_update                                                         
+                                                                                
+    3968 │   │   │   │   if isinstance(validator, CompoundValidator) and isins  
+    3969 │   │   │   │   │   # Update compound objects recursively              
+    3970 │   │   │   │   │   # plotly_obj[key].update(val)                      
+  ❱ 3971 │   │   │   │   │   BaseFigure._perform_update(plotly_obj[key], val)   
+    3972 │   │   │   │   elif isinstance(validator, CompoundArrayValidator):    
+    3973 │   │   │   │   │   if plotly_obj[key]:                                
+    3974 │   │   │   │   │   │   # plotly_obj has an existing non-empty array   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.coloraxis.ColorBar: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        bgcolor
+            Sets the color of padded area.
+        bordercolor
+            Sets the axis line color.
+        borderwidth
+            Sets the width (in px) or the border enclosing this
+            color bar.
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        len
+            Sets the length of the color bar This measure excludes
+            the padding of both ends. That is, the color bar length
+            is this length minus the padding on both ends.
+        lenmode
+            Determines whether this color bar's length (i.e. the
+            measure in the color variation direction) is set in
+            units of plot "fraction" or in *pixels. Use `len` to
+            set the value.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        orientation
+            Sets the orientation of the colorbar.
+        outlinecolor
+            Sets the axis line color.
+        outlinewidth
+            Sets the width (in px) of the axis line.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        thickness
+            Sets the thickness of the color bar This measure
+            excludes the size of the padding, ticks and labels.
+        thicknessmode
+            Determines whether this color bar's thickness (i.e. the
+            measure in the constant color direction) is set in
+            units of plot "fraction" or in "pixels". Use
+            `thickness` to set the value.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the color bar's tick label font
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.coloraxi
+            s.colorbar.Tickformatstop` instances or dicts with
+            compatible properties
+        tickformatstopdefaults
+            When used in a template (as layout.template.layout.colo
+            raxis.colorbar.tickformatstopdefaults), sets the
+            default property values to use for elements of
+            layout.coloraxis.colorbar.tickformatstops
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. In other cases the default is *hide past
+            div*.
+        ticklabelposition
+            Determines where tick labels are drawn relative to the
+            ticks. Left and right options are used when
+            `orientation` is "h", top and bottom when `orientation`
+            is "v".
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided).
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.coloraxis.colorbar.
+            Title` instance or dict with compatible properties
+        x
+            Sets the x position with respect to `xref` of the color
+            bar (in plot fraction). When `xref` is "paper",
+            defaults to 1.02 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". When `xref` is "container",
+            defaults to 1 when `orientation` is "v" and 0.5 when
+            `orientation` is "h". Must be between 0 and 1 if `xref`
+            is "container" and between "-2" and 3 if `xref` is
+            "paper".
+        xanchor
+            Sets this color bar's horizontal position anchor. This
+            anchor binds the `x` position to the "left", "center"
+            or "right" of the color bar. Defaults to "left" when
+            `orientation` is "v" and "center" when `orientation` is
+            "h".
+        xpad
+            Sets the amount of padding (in px) along the x
+            direction.
+        xref
+            Sets the container `x` refers to. "container" spans the
+            entire `width` of the plot. "paper" refers to the width
+            of the plotting area only.
+        y
+            Sets the y position with respect to `yref` of the color
+            bar (in plot fraction). When `yref` is "paper",
+            defaults to 0.5 when `orientation` is "v" and 1.02 when
+            `orientation` is "h". When `yref` is "container",
+            defaults to 0.5 when `orientation` is "v" and 1 when
+            `orientation` is "h". Must be between 0 and 1 if `yref`
+            is "container" and between "-2" and 3 if `yref` is
+            "paper".
+        yanchor
+            Sets this color bar's vertical position anchor This
+            anchor binds the `y` position to the "top", "middle" or
+            "bottom" of the color bar. Defaults to "middle" when
+            `orientation` is "v" and "bottom" when `orientation` is
+            "h".
+        ypad
+            Sets the amount of padding (in px) along the y
+            direction.
+        yref
+            Sets the container `y` refers to. "container" spans the
+            entire `height` of the plot. "paper" refers to the
+            height of the plotting area only.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+[05:21:35] 🐙 Pulling code changes from Github...
+[05:21:35] 📦 Processing dependencies...
+[05:21:35] 📦 Processed dependencies!
+2026-03-27 05:21:35.648 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:21:35.714 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:21:35.880 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:21:35.973 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:21:36.026 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/3_Dashboard.py:260 in      
+  <module>                                                                      
+                                                                                
+    257 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)        
+    258                                                                         
+    259 st.markdown('<div class="section-title">Registration Fee vs Rating (Sc  
+  ❱ 260 fig_sc = px.scatter(dff, x="Amount Paid", y="Rating",                   
+    261 │   │   │   │   │   color="Event Name", size_max=14,                    
+    262 │   │   │   │   │   color_discrete_sequence=PASTEL,                     
+    263 │   │   │   │   │   opacity=0.85,                                       
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_chart_type  
+  s.py:69 in scatter                                                            
+                                                                                
+      66 │   In a scatter plot, each row of `data_frame` is represented by a s  
+      67 │   mark in 2D space.                                                  
+      68 │   """                                                                
+  ❱   69 │   return make_figure(args=locals(), constructor=go.Scatter)          
+      70                                                                        
+      71                                                                        
+      72 scatter.__doc__ = make_docstring(scatter, append_dict=_cartesian_appe  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_core.py:27  
+  02 in make_figure                                                             
+                                                                                
+    2699 │   │   │   │   elif args["ecdfnorm"] == "percent":                    
+    2700 │   │   │   │   │   group = group.with_columns((nw.col(var) / group_s  
+    2701 │   │   │                                                              
+  ❱ 2702 │   │   │   patch, fit_results = make_trace_kwargs(                    
+    2703 │   │   │   │   args, trace_spec, group, mapping_labels.copy(), sizer  
+    2704 │   │   │   )                                                          
+    2705 │   │   │   trace.update(patch)                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_core.py:43  
+  0 in make_trace_kwargs                                                        
+                                                                                
+     427 │   │   │   │   │   │   trace_patch["x"] = trace_patch["x"].to_numpy(  
+     428 │   │   │   │   │                                                      
+     429 │   │   │   │   │   trendline_function = trendline_functions[attr_val  
+  ❱  430 │   │   │   │   │   y_out, hover_header, fit_results = trendline_func  
+     431 │   │   │   │   │   │   args["trendline_options"],                     
+     432 │   │   │   │   │   │   sorted_trace_data.get_column(args["x"]),  # n  
+     433 │   │   │   │   │   │   x.to_numpy(),  # numpy array                   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/trendline_f  
+  unctions/__init__.py:103 in lowess                                            
+                                                                                
+    100 │   │   │   │   % (", ".join(valid_options), k)                         
+    101 │   │   │   )                                                           
+    102 │                                                                       
+  ❱ 103 │   import statsmodels.api as sm                                        
+    104 │                                                                       
+    105 │   frac = trendline_options.get("frac", 0.6666666)                     
+    106 │   y_out = sm.nonparametric.lowess(y, x, missing="drop", frac=frac)[:  
+────────────────────────────────────────────────────────────────────────────────
+ModuleNotFoundError: No module named 'statsmodels'
+[05:21:36] 🔄 Updated app!
+2026-03-27 05:22:12.330 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:22:12.359 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[05:22:40] 🐙 Pulling code changes from Github...
+[05:22:40] 📦 Processing dependencies...
+[05:22:40] 📦 Processed dependencies!
+[05:22:41] 🔄 Updated app!
+2026-03-27 05:23:45.620 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/1_Participation_Trends.py  
+  :119 in <module>                                                              
+                                                                                
+    116 │   │   │   │   │    font=CHART_FONT,                                   
+    117 │   │   │   │   │    title=dict(text="Participants per State", font=TI  
+    118 │   │   │   │   │    margin=dict(l=5,r=5,t=40,b=5))                     
+  ❱ 119 fig_st.update_xaxes(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, tit  
+    120 fig_st.update_yaxes(gridcolor="#bfdbfe",       tickfont=TICK_FONT, tit  
+    121 st.plotly_chart(fig_st, use_container_width=True)                       
+    122                                                                         
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/graph_objs/_figure.  
+  py:23508 in update_xaxes                                                      
+                                                                                
+    23505 │   │   │   Returns the Figure object that the method was called on   
+    23506 │   │   """                                                           
+    23507 │   │   for obj in self.select_xaxes(selector=selector, row=row, col  
+  ❱ 23508 │   │   │   obj.update(patch, overwrite=overwrite, **kwargs)          
+    23509 │   │                                                                 
+    23510 │   │   return self                                                   
+    23511                                                                       
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:51  
+  95 in update                                                                  
+                                                                                
+    5192 │   │   if self.figure:                                                
+    5193 │   │   │   with self.figure.batch_update():                           
+    5194 │   │   │   │   BaseFigure._perform_update(self, dict1, overwrite=ove  
+  ❱ 5195 │   │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=ov  
+    5196 │   │   else:                                                          
+    5197 │   │   │   BaseFigure._perform_update(self, dict1, overwrite=overwri  
+    5198 │   │   │   BaseFigure._perform_update(self, kwargs, overwrite=overwr  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/basedatatypes.py:39  
+  49 in _perform_update                                                         
+                                                                                
+    3946 │   │   │   │                                                          
+    3947 │   │   │   │   err = _check_path_in_prop_tree(plotly_obj, key, error  
+    3948 │   │   │   │   if err is not None:                                    
+  ❱ 3949 │   │   │   │   │   raise err                                          
+    3950 │   │   │                                                              
+    3951 │   │   │   # Convert update_obj to dict                               
+    3952 │   │   │   # --------------------------                               
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Invalid property specified for object of type 
+plotly.graph_objs.layout.XAxis: 'titlefont'
+
+Did you mean "tickfont"?
+
+    Valid properties:
+        anchor
+            If set to an opposite-letter axis id (e.g. `x2`, `y`),
+            this axis is bound to the corresponding opposite-letter
+            axis. If set to "free", this axis' position is
+            determined by `position`.
+        automargin
+            Determines whether long tick labels automatically grow
+            the figure margins.
+        autorange
+            Determines whether or not the range of this axis is
+            computed in relation to the input data. See `rangemode`
+            for more info. If `range` is provided and it has a
+            value for both the lower and upper bound, `autorange`
+            is set to False. Using "min" applies autorange only to
+            set the minimum. Using "max" applies autorange only to
+            set the maximum. Using *min reversed* applies autorange
+            only to set the minimum on a reversed axis. Using *max
+            reversed* applies autorange only to set the maximum on
+            a reversed axis. Using "reversed" applies autorange on
+            both ends and reverses the axis direction.
+        autorangeoptions
+            :class:`plotly.graph_objects.layout.xaxis.Autorangeopti
+            ons` instance or dict with compatible properties
+        autotickangles
+            When `tickangle` is set to "auto", it will be set to
+            the first angle in this array that is large enough to
+            prevent label overlap.
+        autotypenumbers
+            Using "strict" a numeric string in trace data is not
+            converted to a number. Using *convert types* a numeric
+            string in trace data may be treated as a number during
+            automatic axis `type` detection. Defaults to
+            layout.autotypenumbers.
+        calendar
+            Sets the calendar system to use for `range` and `tick0`
+            if this is a date axis. This does not set the calendar
+            for interpreting data on this axis, that's specified in
+            the trace or via the global `layout.calendar`
+        categoryarray
+            Sets the order in which categories on this axis appear.
+            Only has an effect if `categoryorder` is set to
+            "array". Used with `categoryorder`.
+        categoryarraysrc
+            Sets the source reference on Chart Studio Cloud for
+            `categoryarray`.
+        categoryorder
+            Specifies the ordering logic for the case of
+            categorical variables. By default, plotly uses "trace",
+            which specifies the order that is present in the data
+            supplied. Set `categoryorder` to *category ascending*
+            or *category descending* if order should be determined
+            by the alphanumerical order of the category names. Set
+            `categoryorder` to "array" to derive the ordering from
+            the attribute `categoryarray`. If a category is not
+            found in the `categoryarray` array, the sorting
+            behavior for that attribute will be identical to the
+            "trace" mode. The unspecified categories will follow
+            the categories in `categoryarray`. Set `categoryorder`
+            to *total ascending* or *total descending* if order
+            should be determined by the numerical order of the
+            values. Similarly, the order can be determined by the
+            min, max, sum, mean, geometric mean or median of all
+            the values.
+        color
+            Sets default for all colors associated with this axis
+            all at once: line, font, tick, and grid colors. Grid
+            color is lightened by blending this with the plot
+            background Individual pieces can override this.
+        constrain
+            If this axis needs to be compressed (either due to its
+            own `scaleanchor` and `scaleratio` or those of the
+            other axis), determines how that happens: by increasing
+            the "range", or by decreasing the "domain". Default is
+            "domain" for axes containing image traces, "range"
+            otherwise.
+        constraintoward
+            If this axis needs to be compressed (either due to its
+            own `scaleanchor` and `scaleratio` or those of the
+            other axis), determines which direction we push the
+            originally specified plot area. Options are "left",
+            "center" (default), and "right" for x axes, and "top",
+            "middle" (default), and "bottom" for y axes.
+        dividercolor
+            Sets the color of the dividers Only has an effect on
+            "multicategory" axes.
+        dividerwidth
+            Sets the width (in px) of the dividers Only has an
+            effect on "multicategory" axes.
+        domain
+            Sets the domain of this axis (in plot fraction).
+        dtick
+            Sets the step in-between ticks on this axis. Use with
+            `tick0`. Must be a positive number, or special strings
+            available to "log" and "date" axes. If the axis `type`
+            is "log", then ticks are set every 10^(n*dtick) where n
+            is the tick number. For example, to set a tick mark at
+            1, 10, 100, 1000, ... set dtick to 1. To set tick marks
+            at 1, 100, 10000, ... set dtick to 2. To set tick marks
+            at 1, 5, 25, 125, 625, 3125, ... set dtick to
+            log_10(5), or 0.69897000433. "log" has several special
+            values; "L<f>", where `f` is a positive number, gives
+            ticks linearly spaced in value (but not position). For
+            example `tick0` = 0.1, `dtick` = "L0.5" will put ticks
+            at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10 plus
+            small digits between, use "D1" (all digits) or "D2"
+            (only 2 and 5). `tick0` is ignored for "D1" and "D2".
+            If the axis `type` is "date", then you must convert the
+            time to milliseconds. For example, to set the interval
+            between ticks to one day, set `dtick` to 86400000.0.
+            "date" also has special values "M<n>" gives ticks
+            spaced by a number of months. `n` must be a positive
+            integer. To set ticks on the 15th of every third month,
+            set `tick0` to "2000-01-15" and `dtick` to "M3". To set
+            ticks every 4 years, set `dtick` to "M48"
+        exponentformat
+            Determines a formatting rule for the tick exponents.
+            For example, consider the number 1,000,000,000. If
+            "none", it appears as 1,000,000,000. If "e", 1e+9. If
+            "E", 1E+9. If "power", 1x10^9 (with 9 in a super
+            script). If "SI", 1G. If "B", 1B. "SI" uses prefixes
+            from "femto" f (10^-15) to "tera" T (10^12). *SI
+            extended* covers instead the full SI range from
+            "quecto" q (10^-30) to "quetta" Q (10^30). If "SI" or
+            *SI extended* is used and the exponent is beyond the
+            above ranges, the formatting rule will automatically be
+            switched to the power notation.
+        fixedrange
+            Determines whether or not this axis is zoom-able. If
+            true, then zoom is disabled.
+        gridcolor
+            Sets the color of the grid lines.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the width (in px) of the grid lines.
+        hoverformat
+            Sets the hover text formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        insiderange
+            Could be used to set the desired inside range of this
+            axis (excluding the labels) when `ticklabelposition` of
+            the anchored axis has "inside". Not implemented for
+            axes with `type` "log". This would be ignored when
+            `range` is provided.
+        labelalias
+            Replacement text for specific tick or hover labels. For
+            example using {US: 'USA', CA: 'Canada'} changes US to
+            USA and CA to Canada. The labels we would have shown
+            must match the keys exactly, after adding any
+            tickprefix or ticksuffix. For negative numbers the
+            minus sign symbol used (U+2212) is wider than the
+            regular ascii dash. That means you need to use −1
+            instead of -1. labelalias can be used with any axis
+            type, and both keys (if needed) and values (if desired)
+            can include html-like tags or MathJax.
+        layer
+            Sets the layer on which this axis is displayed. If
+            *above traces*, this axis is displayed above all the
+            subplot's traces If *below traces*, this axis is
+            displayed below all the subplot's traces, but above the
+            grid lines. Useful when used together with scatter-like
+            traces with `cliponaxis` set to False to show markers
+            and/or text nodes above this axis.
+        linecolor
+            Sets the axis line color.
+        linewidth
+            Sets the width (in px) of the axis line.
+        matches
+            If set to another axis id (e.g. `x2`, `y`), the range
+            of this axis will match the range of the corresponding
+            axis in data-coordinates space. Moreover, matching axes
+            share auto-range values, category lists and histogram
+            auto-bins. Note that setting axes simultaneously in
+            both a `scaleanchor` and a `matches` constraint is
+            currently forbidden. Moreover, note that matching axes
+            must have the same `type`.
+        maxallowed
+            Determines the maximum range of this axis.
+        minallowed
+            Determines the minimum range of this axis.
+        minexponent
+            Hide SI prefix for 10^n if |n| is below this number.
+            This only has an effect when `tickformat` is "SI" or
+            "B".
+        minor
+            :class:`plotly.graph_objects.layout.xaxis.Minor`
+            instance or dict with compatible properties
+        minorloglabels
+            Determines how minor log labels are displayed. If
+            *small digits*, small digits i.e. 2 or 5 are displayed.
+            If "complete", complete digits are displayed. If
+            "none", no labels are displayed.
+        mirror
+            Determines if the axis lines or/and ticks are mirrored
+            to the opposite side of the plotting area. If True, the
+            axis lines are mirrored. If "ticks", the axis lines and
+            ticks are mirrored. If False, mirroring is disable. If
+            "all", axis lines are mirrored on all shared-axes
+            subplots. If "allticks", axis lines and ticks are
+            mirrored on all shared-axes subplots.
+        modebardisable
+            Disables certain modebar buttons for this axis.
+            "autoscale" disables the autoscale buttons, "zoominout"
+            disables the zoom-in and zoom-out buttons.
+        nticks
+            Specifies the maximum number of ticks for the
+            particular axis. The actual number of ticks will be
+            chosen automatically to be less than or equal to
+            `nticks`. Has an effect only if `tickmode` is set to
+            "auto".
+        overlaying
+            If set a same-letter axis id, this axis is overlaid on
+            top of the corresponding same-letter axis, with traces
+            and axes visible for both axes. If False, this axis
+            does not overlay any same-letter axes. In this case,
+            for axes with overlapping domains only the highest-
+            numbered axis will be visible.
+        position
+            Sets the position of this axis in the plotting space
+            (in normalized coordinates). Only has an effect if
+            `anchor` is set to "free".
+        range
+            Sets the range of this axis. If the axis `type` is
+            "log", then you must take the log of your desired range
+            (e.g. to set the range from 1 to 100, set the range
+            from 0 to 2). If the axis `type` is "date", it should
+            be date strings, like date data, though Date objects
+            and unix milliseconds will be accepted and converted to
+            strings. If the axis `type` is "category", it should be
+            numbers, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears. Leaving either or both elements `null` impacts
+            the default `autorange`.
+        rangebreaks
+            A tuple of
+            :class:`plotly.graph_objects.layout.xaxis.Rangebreak`
+            instances or dicts with compatible properties
+        rangebreakdefaults
+            When used in a template (as
+            layout.template.layout.xaxis.rangebreakdefaults), sets
+            the default property values to use for elements of
+            layout.xaxis.rangebreaks
+        rangemode
+            If "normal", the range is computed in relation to the
+            extrema of the input data. If "tozero", the range
+            extends to 0, regardless of the input data If
+            "nonnegative", the range is non-negative, regardless of
+            the input data. Applies only to linear axes.
+        rangeselector
+            :class:`plotly.graph_objects.layout.xaxis.Rangeselector
+            ` instance or dict with compatible properties
+        rangeslider
+            :class:`plotly.graph_objects.layout.xaxis.Rangeslider`
+            instance or dict with compatible properties
+        scaleanchor
+            If set to another axis id (e.g. `x2`, `y`), the range
+            of this axis changes together with the range of the
+            corresponding axis such that the scale of pixels per
+            unit is in a constant ratio. Both axes are still
+            zoomable, but when you zoom one, the other will zoom
+            the same amount, keeping a fixed midpoint. `constrain`
+            and `constraintoward` determine how we enforce the
+            constraint. You can chain these, ie `yaxis:
+            {scaleanchor: *x*}, xaxis2: {scaleanchor: *y*}` but you
+            can only link axes of the same `type`. The linked axis
+            can have the opposite letter (to constrain the aspect
+            ratio) or the same letter (to match scales across
+            subplots). Loops (`yaxis: {scaleanchor: *x*}, xaxis:
+            {scaleanchor: *y*}` or longer) are redundant and the
+            last constraint encountered will be ignored to avoid
+            possible inconsistent constraints via `scaleratio`.
+            Note that setting axes simultaneously in both a
+            `scaleanchor` and a `matches` constraint is currently
+            forbidden. Setting `false` allows to remove a default
+            constraint (occasionally, you may need to prevent a
+            default `scaleanchor` constraint from being applied,
+            eg. when having an image trace `yaxis: {scaleanchor:
+            "x"}` is set automatically in order for pixels to be
+            rendered as squares, setting `yaxis: {scaleanchor:
+            false}` allows to remove the constraint).
+        scaleratio
+            If this axis is linked to another by `scaleanchor`,
+            this determines the pixel to unit scale ratio. For
+            example, if this value is 10, then every unit on this
+            axis spans 10 times the number of pixels as a unit on
+            the linked axis. Use this for example to create an
+            elevation profile where the vertical scale is
+            exaggerated a fixed amount with respect to the
+            horizontal.
+        separatethousands
+            If "true", even 4-digit integers are separated
+        showdividers
+            Determines whether or not a dividers are drawn between
+            the category levels of this axis. Only has an effect on
+            "multicategory" axes.
+        showexponent
+            If "all", all exponents are shown besides their
+            significands. If "first", only the exponent of the
+            first tick is shown. If "last", only the exponent of
+            the last tick is shown. If "none", no exponents appear.
+        showgrid
+            Determines whether or not grid lines are drawn. If
+            True, the grid lines are drawn at every tick mark.
+        showline
+            Determines whether or not a line bounding this axis is
+            drawn.
+        showspikes
+            Determines whether or not spikes (aka droplines) are
+            drawn for this axis. Note: This only takes affect when
+            hovermode = closest
+        showticklabels
+            Determines whether or not the tick labels are drawn.
+        showtickprefix
+            If "all", all tick labels are displayed with a prefix.
+            If "first", only the first tick is displayed with a
+            prefix. If "last", only the last tick is displayed with
+            a suffix. If "none", tick prefixes are hidden.
+        showticksuffix
+            Same as `showtickprefix` but for tick suffixes.
+        side
+            Determines whether a x (y) axis is positioned at the
+            "bottom" ("left") or "top" ("right") of the plotting
+            area.
+        spikecolor
+            Sets the spike color. If undefined, will use the series
+            color
+        spikedash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        spikemode
+            Determines the drawing mode for the spike line If
+            "toaxis", the line is drawn from the data point to the
+            axis the  series is plotted on. If "across", the line
+            is drawn across the entire plot area, and supercedes
+            "toaxis". If "marker", then a marker dot is drawn on
+            the axis the series is plotted on
+        spikesnap
+            Determines whether spikelines are stuck to the cursor
+            or to the closest datapoints.
+        spikethickness
+            Sets the width (in px) of the zero line.
+        tick0
+            Sets the placement of the first tick on this axis. Use
+            with `dtick`. If the axis `type` is "log", then you
+            must take the log of your starting tick (e.g. to set
+            the starting tick to 100, set the `tick0` to 2) except
+            when `dtick`=*L<f>* (see `dtick` for more info). If the
+            axis `type` is "date", it should be a date string, like
+            date data. If the axis `type` is "category", it should
+            be a number, using the scale where each category is
+            assigned a serial number from zero in the order it
+            appears.
+        tickangle
+            Sets the angle of the tick labels with respect to the
+            horizontal. For example, a `tickangle` of -90 draws the
+            tick labels vertically.
+        tickcolor
+            Sets the tick color.
+        tickfont
+            Sets the tick font.
+        tickformat
+            Sets the tick label formatting rule using d3 formatting
+            mini-languages which are very similar to those in
+            Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display "09~15~23.46"
+        tickformatstops
+            A tuple of :class:`plotly.graph_objects.layout.xaxis.Ti
+            ckformatstop` instances or dicts with compatible
+            properties
+        tickformatstopdefaults
+            When used in a template (as
+            layout.template.layout.xaxis.tickformatstopdefaults),
+            sets the default property values to use for elements of
+            layout.xaxis.tickformatstops
+        ticklabelindex
+            Only for axes with `type` "date" or "linear". Instead
+            of drawing the major tick label, draw the label for the
+            minor tick that is n positions away from the major
+            tick. E.g. to always draw the label for the minor tick
+            before each major tick, choose `ticklabelindex` -1.
+            This is useful for date axes with `ticklabelmode`
+            "period" if you want to label the period that ends with
+            each major tick instead of the period that begins
+            there.
+        ticklabelindexsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticklabelindex`.
+        ticklabelmode
+            Determines where tick labels are drawn with respect to
+            their corresponding ticks and grid lines. Only has an
+            effect for axes of `type` "date" When set to "period",
+            tick labels are drawn in the middle of the period
+            between ticks.
+        ticklabeloverflow
+            Determines how we handle tick labels that would
+            overflow either the graph div or the domain of the
+            axis. The default value for inside tick labels is *hide
+            past domain*. Otherwise on "category" and
+            "multicategory" axes the default is "allow". In other
+            cases the default is *hide past div*.
+        ticklabelposition
+            Determines where tick labels are drawn with respect to
+            the axis. Please note that top or bottom has no effect
+            on x axes or when `ticklabelmode` is set to "period" or
+            when `tickson` is set to "boundaries". Similarly, left
+            or right has no effect on y axes or when
+            `ticklabelmode` is set to "period" or when `tickson` is
+            set to "boundaries". Has no effect on "multicategory"
+            axes. When used on axes linked by `matches` or
+            `scaleanchor`, no extra padding for inside labels would
+            be added by autorange, so that the scales could match.
+        ticklabelshift
+            Shifts the tick labels by the specified number of
+            pixels in parallel to the axis. Positive values move
+            the labels in the positive direction of the axis.
+        ticklabelstandoff
+            Sets the standoff distance (in px) between the axis
+            tick labels and their default position. A positive
+            `ticklabelstandoff` moves the labels farther away from
+            the plot area if `ticklabelposition` is "outside", and
+            deeper into the plot area if `ticklabelposition` is
+            "inside". A negative `ticklabelstandoff` works in the
+            opposite direction, moving outside ticks towards the
+            plot area and inside ticks towards the outside. If the
+            negative value is large enough, inside ticks can even
+            end up outside and vice versa.
+        ticklabelstep
+            Sets the spacing between tick labels as compared to the
+            spacing between ticks. A value of 1 (default) means
+            each tick gets a label. A value of 2 means shows every
+            2nd label. A larger value n means only every nth tick
+            is labeled. `tick0` determines which labels are shown.
+            Not implemented for axes with `type` "log" or
+            "multicategory", or when `tickmode` is "array".
+        ticklen
+            Sets the tick length (in px).
+        tickmode
+            Sets the tick mode for this axis. If "auto", the number
+            of ticks is set via `nticks`. If "linear", the
+            placement of the ticks is determined by a starting
+            position `tick0` and a tick step `dtick` ("linear" is
+            the default value if `tick0` and `dtick` are provided).
+            If "array", the placement of the ticks is set via
+            `tickvals` and the tick text is `ticktext`. ("array" is
+            the default value if `tickvals` is provided). If
+            "sync", the number of ticks will sync with the
+            overlayed axis set by `overlaying` property.
+        tickprefix
+            Sets a tick label prefix.
+        ticks
+            Determines whether ticks are drawn or not. If "", this
+            axis' ticks are not drawn. If "outside" ("inside"),
+            this axis' are drawn outside (inside) the axis lines.
+        tickson
+            Determines where ticks and grid lines are drawn with
+            respect to their corresponding tick labels. Only has an
+            effect for axes of `type` "category" or
+            "multicategory". When set to "boundaries", ticks and
+            grid lines are drawn half a category to the left/bottom
+            of labels.
+        ticksuffix
+            Sets a tick label suffix.
+        ticktext
+            Sets the text displayed at the ticks position via
+            `tickvals`. Only has an effect if `tickmode` is set to
+            "array". Used with `tickvals`.
+        ticktextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `ticktext`.
+        tickvals
+            Sets the values at which ticks on this axis appear.
+            Only has an effect if `tickmode` is set to "array".
+            Used with `ticktext`.
+        tickvalssrc
+            Sets the source reference on Chart Studio Cloud for
+            `tickvals`.
+        tickwidth
+            Sets the tick width (in px).
+        title
+            :class:`plotly.graph_objects.layout.xaxis.Title`
+            instance or dict with compatible properties
+        type
+            Sets the axis type. By default, plotly attempts to
+            determined the axis type by looking into the data of
+            the traces that referenced the axis in question.
+        uirevision
+            Controls persistence of user-driven changes in axis
+            `range`, `autorange`, and `title` if in `editable:
+            true` configuration. Defaults to `layout.uirevision`.
+        unifiedhovertitle
+            :class:`plotly.graph_objects.layout.xaxis.Unifiedhovert
+            itle` instance or dict with compatible properties
+        visible
+            A single toggle to hide the axis while preserving
+            interaction like dragging. Default is true when a
+            cheater plot is present on the axis, otherwise false
+        zeroline
+            Determines whether or not a line is drawn at along the
+            0 value of this axis. If True, the zero line is drawn
+            on top of the grid lines.
+        zerolinecolor
+            Sets the line color of the zero line.
+        zerolinelayer
+            Sets the layer on which this zeroline is displayed. If
+            *above traces*, this zeroline is displayed above all
+            the subplot's traces If *below traces*, this zeroline
+            is displayed below all the subplot's traces, but above
+            the grid lines. Limitation: "zerolinelayer" currently
+            has no effect if the "zorder" property is set on any
+            trace.
+        zerolinewidth
+            Sets the width (in px) of the zero line.
+        
+Did you mean "tickfont"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+2026-03-27 05:23:49.289 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:23:49.346 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:23:49.505 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:23:49.563 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-03-27 05:23:49.610 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:687 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:166 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/streamlit/navigation/page.  
+  py:380 in run                                                                 
+                                                                                
+  /mount/src/gateways-2025-national-level-fest/pages/3_Dashboard.py:260 in      
+  <module>                                                                      
+                                                                                
+    257 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)        
+    258                                                                         
+    259 st.markdown('<div class="section-title">Registration Fee vs Rating (Sc  
+  ❱ 260 fig_sc = px.scatter(dff, x="Amount Paid", y="Rating",                   
+    261 │   │   │   │   │   color="Event Name", size_max=14,                    
+    262 │   │   │   │   │   color_discrete_sequence=PASTEL,                     
+    263 │   │   │   │   │   opacity=0.85,                                       
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_chart_type  
+  s.py:69 in scatter                                                            
+                                                                                
+      66 │   In a scatter plot, each row of `data_frame` is represented by a s  
+      67 │   mark in 2D space.                                                  
+      68 │   """                                                                
+  ❱   69 │   return make_figure(args=locals(), constructor=go.Scatter)          
+      70                                                                        
+      71                                                                        
+      72 scatter.__doc__ = make_docstring(scatter, append_dict=_cartesian_appe  
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_core.py:27  
+  02 in make_figure                                                             
+                                                                                
+    2699 │   │   │   │   elif args["ecdfnorm"] == "percent":                    
+    2700 │   │   │   │   │   group = group.with_columns((nw.col(var) / group_s  
+    2701 │   │   │                                                              
+  ❱ 2702 │   │   │   patch, fit_results = make_trace_kwargs(                    
+    2703 │   │   │   │   args, trace_spec, group, mapping_labels.copy(), sizer  
+    2704 │   │   │   )                                                          
+    2705 │   │   │   trace.update(patch)                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/_core.py:43  
+  0 in make_trace_kwargs                                                        
+                                                                                
+     427 │   │   │   │   │   │   trace_patch["x"] = trace_patch["x"].to_numpy(  
+     428 │   │   │   │   │                                                      
+     429 │   │   │   │   │   trendline_function = trendline_functions[attr_val  
+  ❱  430 │   │   │   │   │   y_out, hover_header, fit_results = trendline_func  
+     431 │   │   │   │   │   │   args["trendline_options"],                     
+     432 │   │   │   │   │   │   sorted_trace_data.get_column(args["x"]),  # n  
+     433 │   │   │   │   │   │   x.to_numpy(),  # numpy array                   
+                                                                                
+  /home/adminuser/venv/lib/python3.14/site-packages/plotly/express/trendline_f  
+  unctions/__init__.py:103 in lowess                                            
+                                                                                
+    100 │   │   │   │   % (", ".join(valid_options), k)                         
+    101 │   │   │   )                                                           
+    102 │                                                                       
+  ❱ 103 │   import statsmodels.api as sm                                        
+    104 │                                                                       
+    105 │   frac = trendline_options.get("frac", 0.6666666)                     
+    106 │   y_out = sm.nonparametric.lowess(y, x, missing="drop", frac=frac)[:  
+────────────────────────────────────────────────────────────────────────────────
+ModuleNotFoundError: No module named 'statsmodels'

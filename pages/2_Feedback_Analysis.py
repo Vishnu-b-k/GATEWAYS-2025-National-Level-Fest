@@ -121,7 +121,7 @@ if feedback_text.strip():
     buf = io.BytesIO()
     fig_wc.savefig(buf, format="png", bbox_inches="tight", facecolor="#e8f4ff", dpi=130)
     buf.seek(0)
-    st.image(buf, use_column_width=True)
+    st.image(buf, width="stretch")
     plt.close(fig_wc)
 else:
     st.info("No feedback text available for selected filters.")
@@ -146,10 +146,10 @@ with c1:
         margin=dict(l=5,r=5,t=40,b=5),
         coloraxis_showscale=False,
         xaxis=dict(tickmode="linear", tick0=1, dtick=1,
-                   gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
+                   gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
     )
-    st.plotly_chart(fig_rd, use_container_width=True)
+    st.plotly_chart(fig_rd, width="stretch")
 
 with c2:
     st.markdown('<div class="section-title">Avg. Rating per Event</div>', unsafe_allow_html=True)
@@ -168,10 +168,10 @@ with c2:
         title=dict(text="Avg. Rating per Event", font=TITLE_FONT),
         margin=dict(l=5,r=30,t=40,b=5),
         coloraxis_showscale=False,
-        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
+        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
     )
-    st.plotly_chart(fig_re, use_container_width=True)
+    st.plotly_chart(fig_re, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 st.markdown('<div class="section-title">Feedback Sentiment Tag Frequency</div>', unsafe_allow_html=True)
@@ -208,10 +208,10 @@ if counts:
         plot_bgcolor=PLOT_BG, paper_bgcolor=PLOT_BG,
         font=CHART_FONT, margin=dict(l=5,r=20,t=10,b=5),
         coloraxis_showscale=False,
-        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title_font=TICK_FONT),
-        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title_font=TICK_FONT),
+        xaxis=dict(gridcolor="#bfdbfe", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
+        yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=TICK_FONT, title=dict(font=TICK_FONT)),
     )
-    st.plotly_chart(fig_kf, use_container_width=True)
+    st.plotly_chart(fig_kf, width="stretch")
     chip_html = "".join([f'<span class="feedback-chip">{t} ({c})</span>' for t,c in counts.items()])
     st.markdown(chip_html, unsafe_allow_html=True)
 
@@ -231,11 +231,11 @@ fig_heat.update_layout(
         title=dict(text="Avg Rating", font=TICK_FONT),
         tickfont=TICK_FONT
     ),
-    xaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT, color=DARK),
-    yaxis=dict(tickfont=TICK_FONT, title_font=TICK_FONT, color=DARK),
+    xaxis=dict(tickfont=TICK_FONT, title=dict(font=TICK_FONT), color=DARK),
+    yaxis=dict(tickfont=TICK_FONT, title=dict(font=TICK_FONT), color=DARK),
     height=400,
 )
-st.plotly_chart(fig_heat, use_container_width=True)
+st.plotly_chart(fig_heat, width="stretch")
 
 st.markdown("<hr class='soft-divider'>", unsafe_allow_html=True)
 st.markdown('<div class="section-title">All Feedback Records</div>', unsafe_allow_html=True)
@@ -245,5 +245,5 @@ show_df.columns = ["Name","College","State","Event","Rating","Feedback"]
 if search:
     show_df = show_df[show_df["Feedback"].str.contains(search, case=False, na=False)]
 show_df = show_df.sort_values("Rating", ascending=False).reset_index(drop=True)
-st.dataframe(show_df, use_container_width=True, height=320)
+st.dataframe(show_df, width="stretch", height=320)
 st.caption(f"Showing {len(show_df)} records")
